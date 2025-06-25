@@ -3,7 +3,7 @@
     <button v-on:click="updateFirstName">Verander Voornaam</button>
     <input v-model="person.firstName" type="text" />
     <button v-on:click="updateCountry">Verander Land</button>
-    <input v-model="person.country" type="text" />
+    <input v-model.lazy="person.country" type="text" />
 
     <p>Aantal clicks: {{ clicks }}</p>
     <p>Voornaam: {{ person.firstName }}</p>
